@@ -1,6 +1,6 @@
 <html>
 <script>
-    var socket = new WebSocket("ws://vercel-edge.chunqiujinjing.com/socketTest");
+    var socket = new WebSocket("wss://vercel-edge.chunqiujinjing.com/socketTest");
     socket.addEventListener("open", function (event) {
         console.log("socket is open");
         socket.send("这里是html发送过来的");
