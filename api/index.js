@@ -23,7 +23,7 @@ app.get('/api/item/:slug', (req, res) => {
     res.end(`Item: ${slug}`);
 });
 
-app.ws("/argox-vl", function (ws, req) {
+app.ws("/api/argox-vl", function (ws, req) {
 
     ws.on("message", function (msg) {
         const [VERSION] = msg;
